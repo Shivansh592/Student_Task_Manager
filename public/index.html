@@ -924,14 +924,18 @@ body {
   padding: 0;
 }
 
+
 header {
-  margin-top: 0 !important;
+  margin: 0 !important;
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  display: block;
   box-sizing: border-box;
   width: 100%;
   border-radius: 0 !important;
+  transform: none;
 }
+
 
 /* Keep the greeting below the heading strip */
 .welcome-section {
@@ -966,9 +970,7 @@ header {
 
 <body>
   
-<video id="introVideo" autoplay muted loop playsinline>
-  <source src="/todoist-intro.mp4" type="video/mp4">
-</video>
+
 
   <header>
   <h1>Student Task Manager</h1>
