@@ -953,6 +953,87 @@ header {
   border-radius: 16px;
 }
 
+/* DueEase Hero Section */
+
+.dueease-hero {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 10px 10px;
+  margin: 0;
+  position: relative;
+}
+
+
+.dueease-hero .brand-name {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e6e6ee;
+  margin-bottom: 22px;
+}
+
+.dueease-hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -2px;
+  color: #17152b;
+  margin: 0 auto 22px;
+  max-width: 800px;
+}
+
+.dueease-hero .hero-description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #d9d9df;
+  max-width: 680px;
+  margin: 0 auto 8px;
+}
+
+.dueease-hero .hero-support {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #FFFFFF;
+  max-width: 680px;
+  margin: 0 auto 24px;
+}
+
+.dueease-hero .hero-tagline {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #6254e8;
+  background: #f0eeff;
+  padding: 11px 20px;
+  border-radius: 999px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .dueease-hero {
+    padding: 36px 18px 30px;
+  }
+
+  .dueease-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .dueease-hero .hero-description {
+    font-size: 16px;
+  }
+
+  .dueease-hero .hero-support {
+    font-size: 15px;
+  }
+}
+
+
 
 
 
@@ -972,15 +1053,30 @@ header {
   
 
 
-  <header>
-  <h1>Student Task Manager</h1>
-  <p>Organize your assignments. Manage your deadlines. Stay on track.</p>
+  
+<header class="dueease-hero">
+  <div class="brand-name">DueEase</div>
+
+  <h1>A Better Way to Get Things Done.</h1>
+
+  <p class="hero-description">
+    Plan your assignments, prioritize your tasks, and never lose sight of what's next.
+  </p>
+
+  <p class="hero-support">
+    DueEase turns scattered to-dos into a clear plan — no chaos required.
+  </p>
+
+  <p class="hero-tagline">
+    From Oh No to All Done.
+  </p>
 </header>
+
 
 <div class="welcome-section">
   <p id="currentDate" class="current-date"></p>
   <h2 id="greeting">Good afternoon!</h2>
-  <h3 class="welcome-title">Welcome!</h3>
+  
   
 </div>
   <main>
